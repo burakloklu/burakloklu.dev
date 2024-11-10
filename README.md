@@ -17,8 +17,7 @@ A modern, responsive portfolio website built with Next.js, showcasing my project
 
 ## Installation
 
-\```bash
-
+```bash
 # Clone the repository
 
 git clone https://github.com/burakloklu/next-porfolio.git
@@ -30,7 +29,7 @@ npm install
 # Run the development server
 
 npm run dev
-\```
+```
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
