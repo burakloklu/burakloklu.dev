@@ -1,139 +1,122 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuBriefcase, LuGraduationCap } from "react-icons/lu";
-import effortlessApiImg from "@/public/effortlessApi.png";
-import teleMeetUpImg from "@/public/teleMeetUp.png";
-import newtonNureseriesImg from "@/public/newtonNurseries.png";
+import React from 'react';
+import { CgWorkAlt } from 'react-icons/cg';
+import { FaReact } from 'react-icons/fa';
+import { LuBriefcase, LuGraduationCap } from 'react-icons/lu';
+import effortlessApiImg from '@/public/effortlessApi.png';
+import teleMeetUpImg from '@/public/teleMeetUp.png';
+import gessorImg from '@/public/gessor.png';
 
 export const links = [
   {
-    name: "Home",
-    hash: "#home",
+    name: 'About',
+    hash: '/about',
   },
   {
-    name: "About",
-    hash: "#about",
+    name: 'Experience',
+    hash: '/experience',
   },
   {
-    name: "Projects",
-    hash: "#projects",
+    name: 'Projects',
+    hash: '/projects',
   },
   {
-    name: "Skills",
-    hash: "#skills",
+    name: 'Skills',
+    hash: '/skills',
   },
   {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
+    name: 'Contact',
+    hash: '/contact',
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "B.S. in Computer Science",
-    location: "Istanbul Nişantaşı University, Istanbul, TR",
+    title: 'Software Engineer',
+    location: 'Madison, Wisconsin',
+    company: 'An Abstract Level',
     description:
-      "Graduated with a full tuition scholarship. Co-chaired the Software and Electronics Club, promoting collaboration and innovation.",
+      '• Designed and launched EffortlessAPI, a scalable platform for creating customizable APIs with security, versioning, and real-time monitoring.\n' +
+      '• Built collaborative features for video conferencing, optimized WebRTC for low-bandwidth networks, and implemented automated workflows, reducing data errors by over 30%. Achieved high performance and reliability through microservices, RabbitMQ messaging, and rigorous testing.',
+    icon: React.createElement(LuBriefcase),
+    date: 'February 2019 - Present',
+  },
+  {
+    title: 'Software Engineer Intern',
+    location: 'Istanbul, Turkiye',
+    company: 'Mimcrea Web Software',
+    description:
+      '• Developed a user authentication system at the API gateway, reducing processing load and improving response times by 40% for 1K+ concurrent users.\n' +
+      '• Implemented asynchronous image uploads using background processing, reducing average upload time from 11 to 3 seconds through optimized task handling',
+    icon: React.createElement(LuBriefcase),
+    date: 'February 2017 - June 2017',
+  },
+  {
+    title: 'Software Engineer Intern',
+    location: 'Istanbul, Turkiye',
+    company: 'Noktahost',
+    description: '• Built a control component for NoktaPanel account management, cutting yearly support requests by 1.5K+',
+    icon: React.createElement(LuBriefcase),
+    date: 'June 2016 - September 2016',
+  },
+  {
+    title: 'B.S. in Computer Science',
+    company: 'Istanbul Nisantasi University',
+    location: 'Istanbul, Turkiye',
+    description:
+      '• Graduated with a full tuition scholarship.\n' +
+      '• Co-chaired the Software and Electronics Club, promoting collaboration and innovation.',
     icon: React.createElement(LuGraduationCap),
-    date: "2013-2017",
-  },
-  {
-    title: "Software Developer Intern",
-    location: "Çekmeköy, Istanbul",
-    description:
-      "Customized front-end designs for hosting packages, including CMS platforms like WordPress and Joomla. Optimized web hosting infrastructure for Linux and Windows servers.",
-    icon: React.createElement(LuBriefcase),
-    date: "June 2016 - September 2016",
-  },
-  {
-    title: "Software Developer Intern",
-    location: "Esenler, Istanbul",
-    description:
-      "Developed CevApp for collaborative exam preparation with real-time Q&A. Enhanced an e-learning platform using Python and Django, and configured Linux servers for performance optimization.",
-    icon: React.createElement(LuBriefcase),
-    date: "February 2017 - June 2017",
-  },
-  {
-    title: "Full Stack Developer",
-    location: "Madison, Wisconsin",
-    description:
-      "Built a low-code interface using Angular with RxJS and NgRx. Integrated RabbitMQ for asynchronous processing and connected Airtable, SQL databases, and spreadsheets. Created TeleMeetUp, a cross-platform teleconferencing app using Angular, Ionic, WebRTC, Go, AWS, and Google Cloud APIs.",
-    icon: React.createElement(LuBriefcase),
-    date: "February 2019 - Present",
+    date: '2013-2017',
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "TeleMeetUp",
+    name: 'TeleMeetUp',
+    title: 'Teleconferencing and Conversational AI',
     description:
-      "Developed TeleMeetUp, a versatile teleconferencing solution supporting video calls, screen sharing, messaging, user authentication, dynamic room creation, and cloud integration for scalable deployment and data management.",
-    tags: [
-      "Angular",
-      "Ionic",
-      "TypeScript",
-      "WebRTC",
-      "Go",
-      "AWS",
-      "GCP",
-    ],
+      'A dynamic platform for adaptive video quality, instant messaging, and collaborative whiteboarding, enabling seamless team interactions. Built with scalability in mind, it leverages cloud services, real-time data channels, and optimized messaging for fast, reliable communication across networks.',
+    tags: ['Javascript', 'Go', 'Node.js', 'MySQL', 'RabbitMQ', 'WebRTC', 'AWS', 'GCP', 'Docker'],
     imageUrl: teleMeetUpImg,
   },
   {
-    title: "Effortless API",
+    name: 'EffortlessAPI',
+    title: 'Low-Code API Automation Platform',
     description:
-      "Built a low-code interface using Angular. Integrated RabbitMQ for asynchronous processing and connected Airtable, SQL databases, and spreadsheets.",
-    tags: ["Angular", "RxJs", "Bootstrap", "RabbitMQ"],
+      'Built for rapid, secure API deployment, this low-code platform offers flexible endpoint configuration, role-based access control, and real-time monitoring. It seamlessly integrates with existing systems, streamlining workflows and accelerating development.',
+    tags: ['Typescript', 'Go', 'Node.js', 'PostgreSQL', 'AWS', 'Docker', 'Airtable'],
     imageUrl: effortlessApiImg,
   },
   {
-    title: "Newton Nurseries",
+    name: 'Gessor',
+    title: 'AI-Powered Football Prediction Platform',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: newtonNureseriesImg,
+      'Gessor is an analytics tool for football fans, providing AI-based predictions for match outcomes and player performance. Focusing on the Turkish Super Lig, Gessor utilizes historical data and real-time factors to deliver insights, score predictions, and interactive stats for fans.',
+    tags: ['Python', 'Django', 'PostgreSQL', 'REST', 'PyTorch', 'React', 'AWS'],
+    imageUrl: gessorImg,
   },
 ] as const;
 
 export const skillsData = [
-  "JavaScript",
-  "TypeScript",
-  "HTML5",
-  "CSS3",
-  "Python",
-  "Django",
-  "GoLang",
-  "React",
-  "Angular",
-  "Next.js",
-  "Node.js",
-  "Express",
-  "TailwindCSS",
-  "Bootstrap",
-  "Angular Material",
-  "Framer.js",
-  "Figma",
-  "Sketch",
-  "PostgreSQL",
-  "MySQL",
-  "MongoDB",
-  "Rest APIs",
-  "GraphQL",
-  "AWS",
-  "Google Cloud Platform",
-  "Git",
-  "GitLab CI/CD",
-  "GitHub Actions",
-  "Docker",
-  "Postman",
-  "Jira",
-  "VSCode",
-  "JWT",
-  "OAuth",
-  "RabbitMQ"
+  'Python',
+  'Django',
+  'TypeScript',
+  'JavaScript',
+  'GoLang',
+  'Node.js',
+  'React',
+  'Angular',
+  'Next.js',
+  'AWS',
+  'GCP',
+  'PostgreSQL',
+  'MySQL',
+  'MongoDB',
+  'Rest APIs',
+  'GraphQL',
+  'Docker',
+  'Postman',
+  'HTML5',
+  'CSS3',
+  'Figma',
 ] as const;

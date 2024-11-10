@@ -1,3 +1,5 @@
+// hooks.ts
+
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
@@ -7,6 +9,7 @@ export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
   const { ref, inView } = useInView({
     threshold,
   });
+
   const {
     setActiveSection,
     setHasExperienceAnimated,
@@ -16,14 +19,14 @@ export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
 
   useEffect(() => {
     if (inView && Date.now() - timeOfLastClick > 1000) {
-      {
-        setActiveSection(sectionName);
-        if (sectionName === "Experience") {
-          setHasExperienceAnimated(true);
-        }
+      setActiveSection(sectionName);
+
+      // Remove the history update to prevent URL manipulation
+      if (sectionName === "Experience") {
+        setHasExperienceAnimated(true);
       }
     }
-  }, [inView, setActiveSection, hasExperienceAnimated]);
+  }, [inView, setActiveSection, hasExperienceAnimated, sectionName, timeOfLastClick]);
 
   return { ref, inView, hasExperienceAnimated };
 }
