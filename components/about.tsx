@@ -51,7 +51,7 @@ export default function About() {
             </p>
             <div className="flex flex-row gap-4 max-[639px]:justify-center mt-10 h-12">
               <a
-                className="group flex items-center max-w-[14rem] sm:max-w-[13rem] font-medium sm:text-sm bg-[#f9fafc] px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
+                className="group flex items-center whitespace-nowrap max-w-[15rem] sm:max-w-[13rem] font-medium sm:text-sm bg-[#f9fafc] px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
                 href="/Burak_Loklu_Resume.pdf"
                 download
               >
