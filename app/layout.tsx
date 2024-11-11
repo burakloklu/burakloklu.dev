@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Burak Loklu',
-  description: 'Bananas are a fruit, but they’re also a mood. Catch the vibe.',
+  description: 'Bananas are a fruit, but they’re also a mood.',
 };
 
 export default function RootLayout({
