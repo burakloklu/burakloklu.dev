@@ -8,6 +8,7 @@ import { HiDownload } from 'react-icons/hi';
 import portrait from '../public/portrait.jpg';
 import usaFlag from '../public/usa.svg';
 import { BsLinkedin } from 'react-icons/bs';
+import { sendGAEvent } from '@next/third-parties/google';
 
 export default function About() {
   const { ref } = useSectionInView('About');
@@ -51,16 +52,18 @@ export default function About() {
             </p>
             <div className="flex flex-row gap-4 max-[639px]:justify-center mt-10 h-12">
               <a
-                className="group flex items-center whitespace-nowrap max-w-[15rem] sm:max-w-[13rem] font-medium sm:text-sm bg-[#f9fafc] px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
+                className="group flex items-center whitespace-nowrap max-w-[15rem] sm:max-w-[13rem] font-medium sm:text-sm bg-[#f9fafc] px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
                 href="/Burak_Loklu_Resume.pdf"
                 download
+                onClick={() => sendGAEvent('event', 'buttonClicked', { event_category: 'Download', event_label: 'Resume Download' })}
               >
                 Download Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
               </a>
               <a
-                className="flex items-center w-[48px] font-medium sm:text-base bg-[#f9fafc] text-gray-700 text-[1rem] p-[14px] gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
+                className="flex items-center w-[48px] font-medium sm:text-base bg-[#f9fafc] text-gray-700 text-[1rem] p-[14px] gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
                 href="https://linkedin.com/in/burakloklu"
                 target="_blank"
+                onClick={() => sendGAEvent('event', 'buttonClicked', { event_category: 'Social', event_label: 'LinkedIn' })}
               >
                 <BsLinkedin className="min-w-full min-h-full" />
               </a>

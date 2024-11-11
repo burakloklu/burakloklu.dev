@@ -6,9 +6,5 @@ type SectionHeadingProps = {
 };
 
 export default function SectionHeading({ children, className = '' }: SectionHeadingProps) {
-  return (
-    <h2 className={`text-4xl text-red-700 font-medium mb-8 ${className || 'text-center'}`}>
-      {children}
-    </h2>
-  );
+  return <h2 className={`text-4xl text-red-700 dark:text-red-300 font-medium mb-8 ${className || 'text-center'}`}>{children}</h2>;
 }

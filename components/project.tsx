@@ -24,14 +24,17 @@ export default function Project({ name, title, description, tags, imageUrl }: Pr
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-gray-200 max-w-[24rem] sm:max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative h-[auto] sm:h-[24rem] hover:bg-gray-200 transition">
+      <section className="bg-gray-200 max-w-[24rem] sm:max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative h-[auto] sm:h-[24rem] hover:bg-gray-200 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="flex flex-col pb-4 py-4 px-5 sm:pl-10 sm:pr-2 sm:pt-8 sm:max-w-[50%] sm:h-[20rem] h-full group-odd:mr-[9rem] group-even:ml-[9rem] group-odd:sm:mr-[18rem] group-even:sm:ml-[20rem]">
           <h3 className="text-xl font-semibold">{name}</h3>
           <h3 className="text-sm text-[#888] font-medium italic">{title}</h3>
-          <p className="mt-1 text-[0.9rem] text-gray-700">{description}</p>
+          <p className="mt-1 text-[0.9rem] text-gray-700 dark:text-white/70">{description}</p>
           <ul className="flex flex-wrap pt-2 gap-2 mt-auto">
             {tags.map((tag, index) => (
-              <li className="bg-black/[0.7] px-3 py-1 text-[0.6rem] uppercase tracking-wider text-white rounded-full" key={index}>
+              <li
+                className="bg-black/[0.7] px-3 py-1 text-[0.6rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                key={index}
+              >
                 {tag}
               </li>
             ))}
