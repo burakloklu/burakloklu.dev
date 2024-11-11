@@ -59,25 +59,15 @@ export default function Home() {
       <Navbar onNavClick={handleNavClick} />
       <main className="flex dark:bg-gray-900 bg-slate-200 justify-center py-10">
         <div className="dark:bg-gray-800 sm:bg-slate-100 sm:w-4/5 sm:p-8 sm:max-w-4xl p-4 sm:shadow-md rounded-lg justify-items-center sm:font-[Arial]">
-          <div id="about">
-            <About />
-          </div>
+          <About />
           <SectionDivider />
-          <div id="experience">
-            <Experience />
-          </div>
+          <Experience />
           <SectionDivider />
-          <div id="projects">
-            <Projects />
-          </div>
+          <Projects />
           <SectionDivider />
-          <div id="skills">
-            <Skills />
-          </div>
+          <Skills />
           <SectionDivider />
-          <div id="contact">
-            <Contact />
-          </div>
+          <Contact />
         </div>
       </main>
     </>
