@@ -24,7 +24,7 @@ export default function ContactFormEmail({
   return (
     <Html>
       <Head>
-        <Preview>New message from burak.dev</Preview>
+        <Preview>New message from burakloklu.dev</Preview>
       </Head>
       <Tailwind>
         <Body className="bg-gray-100">
