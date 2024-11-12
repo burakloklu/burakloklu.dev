@@ -1,6 +1,4 @@
 import React from 'react';
-import { CgWorkAlt } from 'react-icons/cg';
-import { FaReact } from 'react-icons/fa';
 import { LuBriefcase, LuGraduationCap } from 'react-icons/lu';
 import effortlessApiImg from '@/public/effortlessApi.png';
 import teleMeetUpImg from '@/public/teleMeetUp.png';
@@ -35,8 +33,8 @@ export const experiencesData = [
     location: 'Madison, Wisconsin',
     company: 'An Abstract Level',
     description:
-      '• Designed and launched EffortlessAPI, a scalable platform for creating customizable APIs with security, versioning, and real-time monitoring.\n' +
-      '• Built collaborative features for video conferencing, optimized WebRTC for low-bandwidth networks, and implemented automated workflows, reducing data errors by over 30%. Achieved high performance and reliability through microservices, RabbitMQ messaging, and rigorous testing.',
+      '• Developed EffortlessAPI, a scalable platform for creating customizable APIs with security, versioning, and real-time monitoring\n' +
+      '• Built collaborative features for video conferencing, optimized WebRTC for low-bandwidth networks, and implemented automated workflows, reducing data errors by over 30%. Achieved high performance and reliability through microservices, RabbitMQ messaging, and rigorous testing',
     icon: React.createElement(LuBriefcase),
     date: 'February 2019 - Present',
   },
@@ -45,7 +43,7 @@ export const experiencesData = [
     location: 'Istanbul, Turkiye',
     company: 'Mimcrea Web Software',
     description:
-      '• Developed a user authentication system at the API gateway, reducing processing load and improving response times by 40% for 1K+ concurrent users.\n' +
+      '• Developed a user authentication system at the API gateway, reducing processing load and improving response times by 40% for 1K+ concurrent users\n' +
       '• Implemented asynchronous image uploads using background processing, reducing average upload time from 11 to 3 seconds through optimized task handling',
     icon: React.createElement(LuBriefcase),
     date: 'February 2017 - June 2017',
@@ -63,14 +61,22 @@ export const experiencesData = [
     company: 'Istanbul Nisantasi University',
     location: 'Istanbul, Turkiye',
     description:
-      '• Graduated with a full tuition scholarship.\n' +
-      '• Co-chaired the Software and Electronics Club, promoting collaboration and innovation.',
+      '• Graduated with a full tuition scholarship\n' +
+      '• Co-chaired the Software and Electronics Club, promoting collaboration and innovation',
     icon: React.createElement(LuGraduationCap),
     date: '2013-2017',
   },
 ] as const;
 
 export const projectsData = [
+  {
+    name: 'Gessor',
+    title: 'AI-Powered Football Prediction Platform',
+    description:
+      'Gessor is an analytics tool for football fans, providing AI-based predictions for match outcomes and player performance. Focusing on the Turkish Super Lig, Gessor utilizes historical data and real-time factors to deliver insights, score predictions, and interactive stats for fans.',
+    tags: ['Python', 'Django', 'PostgreSQL', 'REST', 'PyTorch', 'React', 'AWS'],
+    imageUrl: gessorImg,
+  },
   {
     name: 'TeleMeetUp',
     title: 'Teleconferencing and Conversational AI',
@@ -87,36 +93,27 @@ export const projectsData = [
     tags: ['Typescript', 'Go', 'Node.js', 'PostgreSQL', 'AWS', 'Docker', 'Airtable'],
     imageUrl: effortlessApiImg,
   },
-  {
-    name: 'Gessor',
-    title: 'AI-Powered Football Prediction Platform',
-    description:
-      'Gessor is an analytics tool for football fans, providing AI-based predictions for match outcomes and player performance. Focusing on the Turkish Super Lig, Gessor utilizes historical data and real-time factors to deliver insights, score predictions, and interactive stats for fans.',
-    tags: ['Python', 'Django', 'PostgreSQL', 'REST', 'PyTorch', 'React', 'AWS'],
-    imageUrl: gessorImg,
-  },
 ] as const;
 
 export const skillsData = [
   'Python',
-  'Django',
-  'TypeScript',
+  'Go',
   'JavaScript',
-  'GoLang',
+  'TypeScript',
+  'SQL',
+  'HTML',
+  'CSS',
+  'AWS',
+  'GCP',
   'Node.js',
   'React',
   'Angular',
   'Next.js',
-  'AWS',
-  'GCP',
   'PostgreSQL',
   'MySQL',
-  'MongoDB',
-  'Rest APIs',
+  'PyTorch',
+  'TensorFlow',
+  'REST',
   'GraphQL',
   'Docker',
-  'Postman',
-  'HTML5',
-  'CSS3',
-  'Figma',
 ] as const;
