@@ -34,7 +34,7 @@ export const experiencesData = [
     company: 'An Abstract Level',
     description:
       '• Developed EffortlessAPI, a scalable platform for creating customizable APIs with security, versioning, and real-time monitoring\n' +
-      '• Built collaborative features for video conferencing, optimized WebRTC for low-bandwidth networks, and implemented automated workflows, reducing data errors by over 30%. Achieved high performance and reliability through microservices, RabbitMQ messaging, and rigorous testing',
+      '• Built real-time collaboration features for video conferencing, optimized WebRTC for low-bandwidth networks, and designed a scalable RabbitMQ messaging system for real-time updates. Achieved high performance and reliability through microservices and comprehensive load and unit testing',
     icon: React.createElement(LuBriefcase),
     date: 'February 2019 - Present',
   },
@@ -73,7 +73,7 @@ export const projectsData = [
     name: 'Gessor',
     title: 'AI-Powered Football Prediction Platform',
     description:
-      'Gessor is an analytics tool for football fans, providing AI-based predictions for match outcomes and player performance. Focusing on the Turkish Super Lig, Gessor utilizes historical data and real-time factors to deliver insights, score predictions, and interactive stats for fans.',
+      'Gessor is a football analytics platform providing machine learning-based predictions for match outcomes. Initially focusing on the Turkish Super Lig, Gessor utilizes historical data and real-time factors to deliver insights, score predictions, and interactive stats for fans.',
     tags: ['Python', 'Django', 'PostgreSQL', 'REST', 'PyTorch', 'React', 'AWS'],
     imageUrl: gessorImg,
   },
@@ -81,7 +81,7 @@ export const projectsData = [
     name: 'TeleMeetUp',
     title: 'Teleconferencing and Conversational AI',
     description:
-      'A dynamic platform for adaptive video quality, instant messaging, and collaborative whiteboarding, enabling seamless team interactions. Built with scalability in mind, it leverages cloud services, real-time data channels, and optimized messaging for fast, reliable communication across networks.',
+      'A teleconferencing platform with adaptive video quality, messaging, collaborative whiteboarding, and real-time translation. Designed for scalability, it uses cloud-based systems, data channels, and optimized protocols to provide fast and reliable connections across networks.',
     tags: ['Javascript', 'Go', 'Node.js', 'MySQL', 'RabbitMQ', 'WebRTC', 'AWS', 'GCP', 'Docker'],
     imageUrl: teleMeetUpImg,
   },
@@ -89,7 +89,7 @@ export const projectsData = [
     name: 'EffortlessAPI',
     title: 'Low-Code API Automation Platform',
     description:
-      'Built for rapid, secure API deployment, this low-code platform offers flexible endpoint configuration, role-based access control, and real-time monitoring. It seamlessly integrates with existing systems, streamlining workflows and accelerating development.',
+      'A low-code platform for rapid and secure API deployment, featuring flexible endpoint configuration, role-based access control, and real-time monitoring. Easily integrates with existing systems to streamline workflows and speed up development.',
     tags: ['Typescript', 'Go', 'Node.js', 'PostgreSQL', 'AWS', 'Docker', 'Airtable'],
     imageUrl: effortlessApiImg,
   },
