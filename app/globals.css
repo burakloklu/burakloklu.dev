@@ -4,7 +4,6 @@
 
 html {
   --line-color: #e5e7eb;
-  scroll-padding-top: 100px; /* Adjust to match your navbar height */
 }
 
 html.dark {
@@ -19,12 +18,6 @@ html.dark {
   @apply border border-black/10;
 }
 
-.scroll-offset {
-  padding-top: 100px; /* Adjust this to match the height of your navbar */
-  margin-top: -100px;
-}
-
-/* Left-aligned dates for larger screens */
 @media (min-width: 640px) {
   .vertical-timeline--two-columns
     .vertical-timeline-element:nth-child(odd)
