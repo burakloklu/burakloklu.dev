@@ -15,5 +15,5 @@ export function middleware(request: NextRequest) {
 
 // Specify the paths where this middleware should run
 export const config = {
-  matcher: ['/((?!_next|api|favicon.ico|assets|Burak_Loklu_Resume.pdf).*)'],
+  matcher: ['/((?!_next|api|favicon.ico|assets|burakloklu_resume.pdf).*)'],
 };

@@ -9,6 +9,7 @@ import portrait from '../public/portrait.jpg';
 import usaFlag from '../public/usa.svg';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { sendGAEvent } from '@next/third-parties/google';
+import { HiDocumentText } from 'react-icons/hi2';
 
 export default function About() {
   const { ref } = useSectionInView('About');
@@ -54,10 +55,11 @@ export default function About() {
               <a
                 className="group flex items-center whitespace-nowrap max-w-[15rem] sm:max-w-[13rem] font-medium sm:text-sm bg-[#f9fafc] px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
                 href="/burakloklu_resume.pdf"
-                download="burakloklu_resume.pdf"
-                onClick={() => sendGAEvent('event', 'buttonClicked', { event_category: 'Download', event_label: 'Resume Download' })}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => sendGAEvent('event', 'buttonClicked', { event_category: 'View', event_label: 'Resume View' })}
               >
-                Download Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+                View Resume <HiDocumentText className="size-5 opacity-60 group-hover:translate-y-1 transition" />
               </a>
               <a
                 className="flex items-center w-[48px] font-medium sm:text-base bg-[#f9fafc] text-gray-700 text-[1rem] p-[14px] gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
